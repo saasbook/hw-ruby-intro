@@ -4,7 +4,7 @@ def sum(array)
   return 0 if array.empty?
   sum = 0
   array.each { |a| sum +=a }
-  return sum
+  sum
 end
 
 raise 'sum([]) != 0' unless sum([]) == 0
