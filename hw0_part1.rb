@@ -2,7 +2,9 @@
 
 def sum(array)
   return 0 if array.empty?
-  return 6
+  sum = 0
+  array.each { |a| sum +=a }
+  return sum
 end
 
 raise 'sum([]) != 0' unless sum([]) == 0
