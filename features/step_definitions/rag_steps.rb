@@ -34,7 +34,6 @@ end
 
 
 def run_ag(subject, spec, strategy = 'Rspec grader')
-  debugger
   run_process "./grade #{RAG_HW_PATH}/#{subject} #{RAG_HW_PATH}/#{spec}"
 end
 

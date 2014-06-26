@@ -12,3 +12,8 @@ Feature: Testing RUBY_INTRO homework
   Examples:
     | test_title               | test_subject           | spec                     | expected_result       |
     | Part1: specs vs solution | solutions/lib/part1.rb | ruby-intro/spec/part1_spec.rb | Score out of 100: 100 |
+    | Part1: specs vs skeleton | ruby-intro/lib/part1.rb    | ruby-intro/spec/part1_spec.rb | Score out of 100: 10  |
+    | Part2: specs vs solution | solutions/lib/part2.rb | ruby-intro/spec/part2_spec.rb | Score out of 100: 100 |
+    | Part2: specs vs skeleton | ruby-intro/lib/part2.rb    | ruby-intro/spec/part2_spec.rb | Score out of 100: 30  |
+    | Part3: specs vs solution | solutions/lib/part3.rb | ruby-intro/spec/part3_spec.rb | Score out of 100: 100 |
+    | Part3: specs vs skeleton | ruby-intro/lib/part3.rb    | ruby-intro/spec/part3_spec.rb | Score out of 100: 30  |
