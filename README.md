@@ -1,5 +1,3 @@
-<div class="problem" name="arrays">
-
 1. Basic Ruby Practice
 
 Check the documentation on Array, Hash and Enumerable as they could help tremendously with these exercises. :-)
@@ -17,9 +15,6 @@ from the top-level directory of the homework distribution.
 The line numbers in the error report will give you guidance as to which
 tests failed.
 
-</div>
-
-<div class="problem" name="strings_and_regexps">
 
 2. Strings and Regular Expressions
 
@@ -39,10 +34,6 @@ from the top-level directory of the homework distribution.
 The line numbers in the error report will give you guidance as to which
 tests failed.
 
-
-</div>
-
-<div class="problem" name="object_oriented_example">
 
 3. Object Oriented Example
 
@@ -69,5 +60,3 @@ To run the "sanity check" tests, run
 from the top-level directory of the homework distribution.
 The line numbers in the error report will give you guidance as to which
 tests failed.
-
-</div>
