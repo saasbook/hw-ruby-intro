@@ -1,4 +1,5 @@
 1) Basic Ruby Practice
+-----------------------
 
 Check the documentation on Array, Hash and Enumerable as they could help tremendously with these exercises. :-)
 
@@ -17,6 +18,7 @@ tests failed.
 
 
 2) Strings and Regular Expressions
+-----------------------
 
 Check the documentation on String and Regexp as they could help tremendously with these exercises. :-)
 
@@ -36,6 +38,7 @@ tests failed.
 
 
 3) Object Oriented Example
+-----------------------
 
 Define a class `BookInStock` which represents a book with an ISBN
 number, `isbn`, and price of the book as a floating-point number,
