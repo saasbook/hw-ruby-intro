@@ -3,8 +3,6 @@ require 'open3'
 # Configure path from homework to rag folder, or can be absolute
 HW_RAG_PATH = 'rag'
 # path from rag to the homework folder, or use absolute path if HW_RAG_PATH is a link
-require 'debugger'
-
 RAG_HW_PATH = '..'
 
 Given(/^I clone "(.*?)" branch of public skeleton "(.*?)" into "(.*?)"$/) do |branch, skel_repo, dir|
