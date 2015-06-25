@@ -1,3 +1,6 @@
+Travis CI Badge
+[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-0-ci.svg?token=CPXPCn5Dy1cwCKsavtqL&branch=master)](https://magnum.travis-ci.com/juanpinzon/hw-0-ci)
+
 Ruby Intro CI
 =============
 

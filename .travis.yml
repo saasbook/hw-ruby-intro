@@ -1,13 +1,12 @@
 language: ruby
 rvm:
-  - "1.9.3"
+  - "2.2.2"
 before_install:
 #  - gem update --system 2.2.0
 #  - gem --version
+#  - gem install therubyracer -v '0.9.10'
 bundler_args: ''
 script:
   - travis_retry cucumber install/install.feature
   - cucumber features
-#  - ./check_all_solutions.sh
-
-
+  - ./check.sh

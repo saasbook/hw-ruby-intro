@@ -1,0 +1,34 @@
+<problem>
+  <startouttext/>
+  <p>
+    Check the documentation on <a href="http://www.ruby-doc.org/core-1.9.3/Array.html">Array</a>, <a href="http://www.ruby-doc.org/core-1.9.3/Hash.html">Hash</a> and <a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html">Enumerable</a> as they could help tremendously with these exercises. :-)
+   </p>
+  <p>
+    <ul style="margin-left: 0em; padding-left: 2.5em;">
+      <li>Define a method <code>sum</code> which takes an array of
+      integers as an argument and returns the sum of its elements.  For an
+      empty array it should return zero.
+      </li>
+      <li>Define a method <code>max_2_sum</code> which takes an array of
+      integers as an argument and returns the sum of its two largest
+      elements.  For an empty array it should return zero.  For an array
+      with just one element, it should return that element.
+      </li>
+      <li>Define a method <code>sum_to_n?</code> which takes an array of
+      integers and an additional integer, n, as arguments and returns
+      true if any two distinct elements in the array of integers sum to n.
+      An empty array or single element array should both return false.
+      </li>
+     </ul>
+  </p>
+  <p>
+    Please put all three methods in a single file and upload it using the upload form below:
+  </p>
+  <endouttext/>
+  <coderesponse queuename="cs169-rev-production">
+    <filesubmission points="100"/>
+    <codeparam>
+      <grader_payload>fall-2013-assign-0-part-1</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>

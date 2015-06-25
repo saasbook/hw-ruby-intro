@@ -1,0 +1,35 @@
+<problem>
+    <startouttext/>
+  <br/>
+   <p>
+    Check the documentation on <a href="http://www.ruby-doc.org/core-1.9.3/String.html">String</a> and <a href="http://www.ruby-doc.org/core-1.9.3/Regexp.html">Regexp</a> as they could help tremendously with these exercises. :-)
+   </p>
+  <p>
+    <ul style="margin-left: 0em; padding-left: 2.5em;">
+      <li>Define a method <code>hello(name)</code> that takes a string
+      representing a name and returns the string "Hello, " concatenated with the name.
+      </li>
+      <li>Define a method <code>starts_with_consonant?(s)</code> that
+      takes a string and returns true if it starts with a consonant and
+      false otherwise.  (For our purposes, a consonant is any letter
+      other than A, E, I, O, U.)  <strong>NOTE:</strong> be sure it
+      works for both upper and lower case and for nonletters!
+      </li>
+      <li>Define a method <code>binary_multiple_of_4?(s)</code> that
+      takes a string and returns true if the string represents a binary
+      number that is a multiple of 4.  <strong>NOTE:</strong> be sure it
+      returns false if the string is not a valid binary number!
+      </li>
+     </ul>
+  </p>
+  <p>
+    Please put all three methods in a single file and upload it using the upload form below:
+  </p>
+  <endouttext/>
+  <coderesponse queuename="cs169-rev-production">
+    <filesubmission points="100"/>
+    <codeparam>
+      <grader_payload>fall-2013-assign-0-part-2</grader_payload>
+    </codeparam>
+  </coderesponse>
+</problem>
