@@ -1,10 +1,10 @@
 Travis CI Badge
-[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-0-ci.svg?token=CPXPCn5Dy1cwCKsavtqL&branch=master)](https://magnum.travis-ci.com/juanpinzon/hw-0-ci)
+[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci.svg?token=vryJZs4sjDxvem15eKaQ&branch=master)](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci)
 
 Ruby Intro CI
 =============
 
-[![Build Status](https://magnum.travis-ci.com/saasbook/ruby-intro-ci.svg?token=vryJZs4sjDxvem15eKaQ&branch=master)](https://magnum.travis-ci.com/saasbook/ruby-intro-ci)
+[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci.svg?token=vryJZs4sjDxvem15eKaQ&branch=master)](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci)
 
 Checking the integrity of the Ruby Intro Assignment
 
