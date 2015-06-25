@@ -4,17 +4,17 @@ Feature: Testing RUBY_INTRO homework
   I would like these homeworks to be automatically tested on submit
 
   Scenario Outline: Runs AutoGrader with a given spec sheet
-    Given I clone "master" branch of public skeleton "juanpinzon/hw-ruby-intro" into "."
+    Given I clone "master" branch of public skeleton "apelade/hw-0" into "."
     And I have the homework in "."
     When I run AutoGrader for <test_subject> and <spec>
     Then I should see that the results are <expected_result>
     And I should see the execution results with <test_title>
     ##
   Examples:
-    | test_title               | test_subject                 | spec                    | expected_result       |
-    | Part1: specs vs solution | solutions/lib/part1.rb       | hw-ruby-intro/spec/part1_spec.rb | Score out of 100: 100 |
-    | Part1: specs vs skeleton | hw-ruby-intro/lib/part1.rb   | hw-ruby-intro/spec/part1_spec.rb | Score out of 100: 10  |
-    | Part2: specs vs solution | solutions/lib/part2.rb       | hw-ruby-intro/spec/part2_spec.rb | Score out of 100: 100 |
-    | Part2: specs vs skeleton | hw-ruby-intro/lib/part2.rb   | hw-ruby-intro/spec/part2_spec.rb | Score out of 100: 30  |
-    | Part3: specs vs solution | solutions/lib/part3.rb       | hw-ruby-intro/spec/part3_spec.rb | Score out of 100: 100 |
-    | Part3: specs vs skeleton | hw-ruby-intro/lib/part3.rb   | hw-ruby-intro/spec/part3_spec.rb | Score out of 100: 30  |
+    | test_title               | test_subject            | spec                    | expected_result       |
+    | Part1: specs vs solution | solutions/lib/part1.rb  | hw-0/spec/part1_spec.rb | Score out of 100: 100 |
+    | Part1: specs vs skeleton | hw-0/lib/part1.rb       | hw-0/spec/part1_spec.rb | Score out of 100: 10  |
+    | Part2: specs vs solution | solutions/lib/part2.rb  | hw-0/spec/part2_spec.rb | Score out of 100: 100 |
+    | Part2: specs vs skeleton | hw-0/lib/part2.rb       | hw-0/spec/part2_spec.rb | Score out of 100: 30  |
+    | Part3: specs vs solution | solutions/lib/part3.rb  | hw-0/spec/part3_spec.rb | Score out of 100: 100 |
+    | Part3: specs vs skeleton | hw-0/lib/part3.rb       | hw-0/spec/part3_spec.rb | Score out of 100: 30  |

@@ -4,13 +4,13 @@ Feature: Installation of dependencies
   I need to check the installation
 
   Scenario: Install gems
-    Given that I am in the project root directory "hw-ruby-intro-ci"
+    Given that I am in the project root directory "hw-0-ci"
     When I install gems
     Then I should see that there are no errors
 
   Scenario: Install or check AutoGraders
-    Given that I am in the project root directory "hw-ruby-intro-ci"
-    When I install or check "juanpinzon/rag" as "rag"
+    Given that I am in the project root directory "hw-0-ci"
+    When I install or check "apelade/rag" as "rag"
     And I change to branch "rubyToo"
     And I install the AutoGrader gems
     And I run cucumber for AutoGrader
@@ -18,6 +18,6 @@ Feature: Installation of dependencies
 
   Scenario: Verify correct version of AutoGraders
     Given I go to the AutoGrader directory "rag"
-    And it has an origin of "juanpinzon/rag"
+    And it has an origin of "apelade/rag"
     When I fetch the latest on origin branch "rubyToo"
     Then I should see no difference
