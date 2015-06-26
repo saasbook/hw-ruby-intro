@@ -6,9 +6,9 @@ describe 'Ruby intro part 1' do
 
     it "returns correct sum [20 points]" do
       expect(sum([1,2,3,4,5])).to be_a_kind_of Fixnum
-      expect(sum([1,2,3,4,5])).to eq(15)
-      expect(sum([1,2,3,4,-5])).to eq(5)
-      expect(sum([1,2,3,4,-5,5,-100])).to eq(-90)
+      expect(sum([1,2,3,4,5])).to be  ==  15
+      expect(sum([1,2,3,4,-5])).to be == 5
+      expect(sum([1,2,3,4,-5,5,-100])).to be == -90
     end
 
     it "works on the empty array [10 points]" do
@@ -24,16 +24,16 @@ describe 'Ruby intro part 1' do
     end
     it "returns the correct sum [7 points]" do
       expect(max_2_sum([1,2,3,4,5])).to be_a_kind_of Fixnum
-      expect(max_2_sum([1,-2,-3,-4,-5])).to eq(-1)
+      expect(max_2_sum([1,-2,-3,-4,-5])).to be == -1
     end
     it 'works even if 2 largest values are the same [3 points]' do
-      expect(max_2_sum([1,2,3,3])).to eq(6)
+      expect(max_2_sum([1,2,3,3])).to be == 6
     end
     it "returns zero if array is empty [10 points]" do
       expect(max_2_sum([])).to be_zero
     end
     it "returns value of the element if just one element [10 points]" do
-      expect(max_2_sum([3])).to eq(3)
+      expect(max_2_sum([3])).to be == 3
     end
   end
 
