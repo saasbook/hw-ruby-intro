@@ -5,7 +5,7 @@ describe 'Ruby intro part 1' do
     end
 
     it "returns correct sum [20 points]" do
-      expect(sum([1,2,3,4,5])).to be_a_kind_of(Fixnum)
+      expect(sum([1,2,3,4,5])).to be_a_kind_of Fixnum
       expect(sum([1,2,3,4,5])).to be  ==  15
       expect(sum([1,2,3,4,-5])).to be == 5
       expect(sum([1,2,3,4,-5,5,-100])).to be == -90
