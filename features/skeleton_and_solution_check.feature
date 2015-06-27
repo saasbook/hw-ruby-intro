@@ -9,7 +9,7 @@ Feature: Testing RUBY_INTRO homework
     When I run AutoGrader for <test_subject> and <spec>
     Then I should see that the results are <expected_result>
     And I should see the execution results with <test_title>
-    ##
+    ###
   Examples:
     | test_title               | test_subject                  | spec                    | expected_result       |
     | Part1: specs vs solution | solutions/lib/part1.rb        | hw-ruby-intro/spec/part1_spec.rb | Score out of 100: 100 |
