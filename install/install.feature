@@ -14,7 +14,7 @@ Feature: Installation of dependencies
     And I change to branch "rubyToo"
     And I install the AutoGrader gems
     And I run cucumber for AutoGrader
-    ## two errors presently, skip this:  Then I should see that there are no errors
+    ### two errors presently, skip this:  Then I should see that there are no errors
 
   Scenario: Verify correct version of AutoGraders
     Given I go to the AutoGrader directory "rag"
