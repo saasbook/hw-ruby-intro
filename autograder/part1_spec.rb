@@ -23,17 +23,17 @@ describe 'Ruby intro part 1' do
       expect { max_2_sum([1,2,3]) }.not_to raise_error
     end
     it "returns the correct sum [7 points]" do
-      max_2_sum([1,2,3,4,5]).should be_a_kind_of Fixnum
-      max_2_sum([1,-2,-3,-4,-5]).should == -1
+      expect(max_2_sum([1,2,3,4,5])).to be_a_kind_of Fixnum
+      expect(max_2_sum([1,-2,-3,-4,-5])).to eq(-1)
     end
     it 'works even if 2 largest values are the same [3 points]' do
-      max_2_sum([1,2,3,3]).should == 6
+      expect(max_2_sum([1,2,3,3])).to eq(6)
     end
     it "returns zero if array is empty [10 points]" do
-      max_2_sum([]).should be_zero
+      expect(max_2_sum([])).to be_zero
     end
     it "returns value of the element if just one element [10 points]" do
-      max_2_sum([3]).should == 3
+      expect(max_2_sum([3])).to eq(3)
     end
   end
 
