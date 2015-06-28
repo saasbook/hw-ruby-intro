@@ -41,10 +41,10 @@ describe 'Ruby intro part 1' do
       expect { sum_to_n?([1,2,3],4) }.not_to raise_error
     end
     it "returns true when any two elements sum to the second argument [30 points]" do
-      sum_to_n?([1,2,3,4,5], 5).should be_true
-      sum_to_n?([3,0,5], 5).should be_true
-      sum_to_n?([-1,-2,3,4,5,-8], 12).should be_false
-      sum_to_n?([-1,-2,3,4,6,-8], 12).should be_false
+      expect(sum_to_n?([1,2,3,4,5], 5)).to be true
+      expect(sum_to_n?([3,0,5], 5)).to be true
+      expect(sum_to_n?([-1,-2,3,4,5,-8], 12)).to be false
+      expect(sum_to_n?([-1,-2,3,4,6,-8], 12)).to be false
     end
     it "returns false for the single element array [5 points]" do
       sum_to_n?([1], 1).should be_false
