@@ -5,15 +5,15 @@ describe 'Ruby intro part 1' do
     end
 
     it "returns correct sum [20 points]" do
-      sum([1,2,3,4,5]).should be_a_kind_of Fixnum
-      sum([1,2,3,4,5]).should == 15
-      sum([1,2,3,4,-5]).should == 5
-      sum([1,2,3,4,-5,5,-100]).should == -90
+      expect(sum([1,2,3,4,5])).to be_a_kind_of Fixnum
+      expect(sum([1,2,3,4,5])).to eq(15)
+      expect(sum([1,2,3,4,-5])).to eq(5)
+      expect(sum([1,2,3,4,-5,5,-100])).to eq(-90)
     end
 
     it "works on the empty array [10 points]" do
       expect { sum([]) }.not_to raise_error
-      sum([]).should be_zero
+      expect(sum([])).to be_zero
     end
     
   end
