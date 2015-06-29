@@ -55,6 +55,7 @@ describe 'Ruby intro part 1' do
       sum_to_n?([], 7).should be_false
     end
 
+    #
     #for rspec 3.x
     #it "returns false for the single element array [5 points]" do
     #  expect(sum_to_n?([1], 1)).to be false
