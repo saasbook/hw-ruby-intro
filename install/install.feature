@@ -19,5 +19,5 @@ Feature: Installation of dependencies
   Scenario: Verify correct version of AutoGraders
     Given I go to the AutoGrader directory "rag"
     And it has an origin of "saasbook/rag"
-    When I fetch the latest on origin branch "develop"
+    When I fetch the latest on origin branch "autograder_engine_refactor"
     Then I should see no difference
