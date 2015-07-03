@@ -19,5 +19,5 @@ Feature: Installation of dependencies
   Scenario: Verify correct version of AutoGraders
     Given I go to the AutoGrader directory "rag"
     And it has an origin of "apelade/rag"
-    When I fetch the latest on origin branch "rubyToo"
-    Then I should see no difference
+    #When I fetch the latest on origin branch "rubyToo"
+    #Then I should see no difference
