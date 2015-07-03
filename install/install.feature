@@ -10,14 +10,14 @@ Feature: Installation of dependencies
 
   Scenario: Install or check AutoGraders
     Given that I am in the project root directory "hw-ruby-intro-ci"
-    When I install or check "apelade/rag" as "rag"
-    And I change to branch "rubyToo"
+    When I install or check "saasbook/rag" as "rag"
+    And I change to branch "autograder_engine_refactor"
     And I install the AutoGrader gems
     And I run cucumber for AutoGrader
     ### two errors presently, skip this:  Then I should see that there are no errors
 
   Scenario: Verify correct version of AutoGraders
     Given I go to the AutoGrader directory "rag"
-    And it has an origin of "apelade/rag"
-    #When I fetch the latest on origin branch "rubyToo"
-    #Then I should see no difference
+    And it has an origin of "saasbook/rag"
+    When I fetch the latest on origin branch "autograder_engine_refactor"
+    Then I should see no difference
