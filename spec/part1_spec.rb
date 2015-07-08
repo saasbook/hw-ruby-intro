@@ -56,12 +56,12 @@ describe 'Ruby intro part 1' do
     #   sum_to_n?([], 7).should be_false
     # end
     it "returns false for the single element array [5 points]" do
-      expect(sum_to_n?([1], 1)).to be false
-      expect(sum_to_n?([3], 0)).to be false
+      expect(sum_to_n?([1], 1)).to be_false
+      expect(sum_to_n?([3], 0)).to be_false
     end
     it "returns false for the empty array [5 points]" do
-      expect(sum_to_n?([], 0)).to be false
-      expect(sum_to_n?([], 7)).to be false
+      expect(sum_to_n?([], 0)).to be_false
+      expect(sum_to_n?([], 7)).to be_false
     end
   end
 end
