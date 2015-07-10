@@ -4,7 +4,7 @@ Feature: Testing RUBY_INTRO homework
   I would like these homeworks to be automatically tested on submit
 
   Scenario Outline: Runs AutoGrader with a given spec sheet
-    Given I clone "master" branch of public skeleton "juanpinzon/hw-ruby-intro" into "."
+    Given I clone "master" branch of public skeleton "saasbook/hw-ruby-intro" into "."
     And I have the homework in "."
     When I run AutoGrader for <test_subject> and <spec>
     Then I should see that the results are <expected_result>
