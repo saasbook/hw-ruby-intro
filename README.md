@@ -1,7 +1,7 @@
 Ruby Intro CI
 =============
 
-[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci)
+[![Build Status](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci)
 
 Checking the integrity of the Ruby Intro Assignment
 
