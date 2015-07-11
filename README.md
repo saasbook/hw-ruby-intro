@@ -1,10 +1,5 @@
 Travis CI Badge
-saasbook
 [![Build Status](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci)
-
-mio
-[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci)
-
 
 Ruby Intro CI
 =============
@@ -15,15 +10,15 @@ Notes
 
 This repo exists as a result of a process of splitting all the 169 homeworks into separate repos, e.g.
 
-https://github.com/saasbook/ruby-intro
+https://github.com/saasbook/hw-ruby-intro
 
 that are each paired with a private CI repo that would check their integrity, e.g. this one:
 
-https://github.com/saasbook/ruby-intro-ci
+https://github.com/saasbook/hw-ruby-intro-ci
 
 The entire set up might be easier if everything with public.  The argument for the privacy is that if students have access to the tests that check their solutions they will be able to somehow 'cheat' although the counter-argument is that none of the 169 homework tests really reveal how to create a solution given that they are usually high level behavioural tests. Anyhow, the customer requirement was that some tests were to be kept private, so the *-ci repos are private.  And the workflow is this.
 
-Anytime that one wants to make a change to the student visible homework (e.g. to https://github.com/saasbook/ruby-intro), or the way in which they are graded (e.g. to https://github.com/saasbook/ruby-intro-ci) they submit  a pull request to the relevant repo.  Pull requests to the public student repo don't really have any effect - they just need to be reviewed and sanity checked by an admin - because the two repos are separate and the tests are in a private repo it's not obvious how to have pull request to publie repos kick off the tests.
+Anytime that one wants to make a change to the student visible homework (e.g. to https://github.com/saasbook/hw-ruby-intro), or the way in which they are graded (e.g. to https://github.com/saasbook/hw-ruby-intro-ci) they submit  a pull request to the relevant repo.  Pull requests to the public student repo don't really have any effect - they just need to be reviewed and sanity checked by an admin - because the two repos are separate and the tests are in a private repo it's not obvious how to have pull request to publie repos kick off the tests.
 
 You might we should just have one repo, but then that would have to be private, and there would be no starting repo for students to fork and then submit pull requests if they find issues.  Enabling students to submit pull requests on the public repos is absolutely critical for QA.  1000's of students try the early homeworks, finding all sorts of corner cases that we need to fix.  It's sooooo much more manageable to handle as pull requests rather than emails or forum posts.
 
@@ -36,8 +31,8 @@ Given that an instructor is proposing changes to the private repo, i.e. the priv
 
 Both these stages are coded in cucumber, e.g.
 
-https://github.com/saasbook/ruby-intro-ci/blob/master/install/install.feature
-https://github.com/saasbook/ruby-intro-ci/blob/master/features/skeleton_and_solution_check.feature
+https://github.com/saasbook/hw-ruby-intro-ci/blob/master/install/install.feature
+https://github.com/saasbook/hw-ruby-intro-ci/blob/master/features/skeleton_and_solution_check.feature
 
 The whole process is designed to try and prevent errors from creeping in from any changes to the skeletons and public tests that the students clone, the private tests that are used to check the solutions, the example solutions, and even the autograder itself.
 
