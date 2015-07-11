@@ -75,5 +75,5 @@ Then(/^I should see no difference$/) do
 end
 
 Then(/^I should see that there are no errors$/) do
-  expect(@test_status).to be true
+  expect(@test_status).to be_success
 end
