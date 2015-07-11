@@ -71,7 +71,7 @@ end
 
 Then(/^I should see no difference$/) do
   run_in_dir("git diff origin/#{@branch}")
-  expect(@test_output).to be == ''
+  expect(@test_output == '').to be true
 end
 
 Then(/^I should see that there are no errors$/) do
