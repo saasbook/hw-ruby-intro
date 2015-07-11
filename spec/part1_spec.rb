@@ -47,7 +47,7 @@ describe 'Ruby intro part 1' do
       expect(sum_to_n?([-1,-2,3,4,6,-8], 12)).to be false
     end
     
-    #for rspec 2.14.1
+    #for rspec 3.3.0
     it "returns false for the single element array [5 points]" do
       sum_to_n?([1], 1).should be_falsey
       sum_to_n?([3], 0).should be_falsey
@@ -56,6 +56,7 @@ describe 'Ruby intro part 1' do
       sum_to_n?([], 0).should be_falsey
       sum_to_n?([], 7).should be_falsey
     end
+    #for rspec 2.14.1
     # it "returns false for the single element array [5 points]" do
     #   expect(sum_to_n?([1], 1)).to be false
     #   expect(sum_to_n?([3], 0)).to be false
