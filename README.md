@@ -1,7 +1,6 @@
 Travis CI Badge
 [![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci)
 
-
 Ruby Intro CI
 =============
 Checking the integrity of the Ruby Intro Assignment
