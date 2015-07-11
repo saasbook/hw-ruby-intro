@@ -1,5 +1,9 @@
 Travis CI Badge
+saasbook
 [![Build Status](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci)
+
+mio
+[![Build Status](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/juanpinzon/hw-ruby-intro-ci)
 
 
 Ruby Intro CI
