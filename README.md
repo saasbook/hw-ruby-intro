@@ -3,45 +3,80 @@ Ruby Intro CI
 
 [![Build Status](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci)
 
-Checking the integrity of the Ruby Intro Assignment
+This 3-part homework gives some basic practice in Ruby as well as
+getting you accustomed to making testing a regular part of your workflow.
 
-Notes
-----
+It follows a fairly standard Ruby convention for codebases: the code
+files are stored in `lib/` and the test files are stored in `spec/`.
+(We use the RSpec unit-testing framework; if we were using Ruby's default
+framework, known as `Test::Unit`, the test files would be under
+`test/`.)
 
-This repo exists as a result of a process of splitting all the 169 homeworks into separate repos, e.g.
+We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
+can submit this single file to the autograder.
 
-https://github.com/saasbook/hw-ruby-intro
+However, you can test each of the 3 parts separately.  The files
+`spec/part[123]_spec.rb` contain RSpec tests for each of the three
+parts.  For example, to test your answers to Part 1, say `rspec
+spec/part1_spec.rb`.  `rspec` with no arguments runs the tests in all
+the files `spec/*_spec.rb`.
 
-that are each paired with a private CI repo that would check their integrity, e.g. this one:
+* The line numbers in the RSpec error report will
+give you guidance as to which tests failed.  (You can check the [RSpec
+documentation](http://rspec.info) to see how the `.rspec` file can be
+used to customize the output format.)
 
-https://github.com/saasbook/hw-ruby-intro-ci
+* If you want to be really cool, run `autotest`.  This will run all the
+tests in `spec/`, but every time you edit and save your code file, the
+tests are automatically re-run, so you don't have to run them manually.
+As we'll see later, this is the first step to TDD or test-driven
+development: write the tests before you write the code, watch the test
+fail, fill in the code and save the code file, then watch the test pass!
 
-The entire set up might be easier if everything with public.  The argument for the privacy is that if students have access to the tests that check their solutions they will be able to somehow 'cheat' although the counter-argument is that none of the 169 homework tests really reveal how to create a solution given that they are usually high level behavioural tests. Anyhow, the customer requirement was that some tests were to be kept private, so the *-ci repos are private.  And the workflow is this.
 
-Anytime that one wants to make a change to the student visible homework (e.g. to https://github.com/saasbook/hw-ruby-intro), or the way in which they are graded (e.g. to https://github.com/saasbook/hw-ruby-intro-ci) they submit  a pull request to the relevant repo.  Pull requests to the public student repo don't really have any effect - they just need to be reviewed and sanity checked by an admin - because the two repos are separate and the tests are in a private repo it's not obvious how to have pull request to publie repos kick off the tests.
+# 1. Arrays, Hashes, and Enumerables
 
-You might we should just have one repo, but then that would have to be private, and there would be no starting repo for students to fork and then submit pull requests if they find issues.  Enabling students to submit pull requests on the public repos is absolutely critical for QA.  1000's of students try the early homeworks, finding all sorts of corner cases that we need to fix.  It's sooooo much more manageable to handle as pull requests rather than emails or forum posts.
+Check the [Ruby 2.x documentation](http://ruby-doc.org) on `Array`,
+`Hash` and `Enumerable` as they could help tremendously with these
+exercises. :-) 
 
-So any admin wanting to approve a pull request on a public repo needs to kick off a run of the Travis CI on the private repo to make sure that the proposed changes don't break the grader or are incompatible with the private tests etc.
+0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.
 
-Given that an instructor is proposing changes to the private repo, i.e. the private tests, then Travis will automatically kick off a check on any pull request.  The way things are set up there is a two stage process:
+0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element. 
 
-1. Travis pulls out the autograder (without edx component)
-2. Travis runs the autograder on code from both the private and public repos in order to check consistency
+0. Define a method `sum_to_n?(array)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. An empty array should sum to zero by definition.
 
-Both these stages are coded in cucumber, e.g.
+You can check your progress by running `rspec spec/part1_spec.rb`, or
+just running `autotest` and leaving it running.
 
-https://github.com/saasbook/hw-ruby-intro-ci/blob/master/install/install.feature
-https://github.com/saasbook/hw-ruby-intro-ci/blob/master/features/skeleton_and_solution_check.feature
+# 2. Strings and Regular Expressions
 
-The whole process is designed to try and prevent errors from creeping in from any changes to the skeletons and public tests that the students clone, the private tests that are used to check the solutions, the example solutions, and even the autograder itself.
+Check the documentation on String and Regexp as they could help tremendously with these exercises. :-)
 
-This was all fairly simple for the first few homeworks, however as one gets up to the more complex rails homeworks there was a fair deal of complexity and hard work to make everything flow.  If memory serves everything is working on all hws due to particularly herculean efforts on the part of Paul, but I think the process left all of us rather tired of the whole autograder setup, which seems much more complex than in needs to be.  Paul did a great job, but the complexity of the whole thing meant that it was very difficult to onboard other volunteers, so Paul often ended up working alone with just a little outside support.   If only we could have got two or three other committed volunteers involved it might have been a different story.
+0. Define a method `hello(name)` that takes a string representing a name and returns the string "Hello, " concatenated with the name.
 
-Anyhow, the framework is largely there, and working - please do check out the relevant repos and you can run the cucumber tests locally to do the same thing that Travis does.
+0. Define a method `starts_with_consonant?(s)` that takes a string and returns true if it starts with a consonant and false otherwise. (For our purposes, a consonant is any letter other than A, E, I, O, U.) NOTE: be sure it works for both upper and lower case and for nonletters!
 
-Most complexity will usually come from the autograder install.  Unfortunately the autograder codebase is extremely convoluted and in a rather poor state.  The intention of all this Travis C.I. work with all the different repos was to get us to the point that we could start safely refactoring the autograder itself knowing that we weren't breaking all the homeworks, however we never really got to the that point - we set up the overarching CI with a lot of effort, but by that time we were all pretty much burnt out.
+0. Define a method `binary_multiple_of_4?(s)` that takes a string and returns true if the string represents a binary number that is a multiple of 4. NOTE: be sure it returns false if the string is not a valid binary number!
 
-So the options moving forward are to try and refactor the existing autograder, which should be able to be done with some reliability now (although still the checks against all homeworks make the debug cycle a bit long); or to effectively bin the existing autograder as beyond hope and replace it with something leaner, that's actually programmed according to agile principles, i.e. test driven and not just hacked together to basically work given a few manual tests.
 
-Best of luck!
+# 3. Object Oriented Basics
+
+
+Define a class `BookInStock` which represents a book with an ISBN
+number, `isbn`, and price of the book as a floating-point number,
+`price`, as attributes.  
+
+The constructor should accept the ISBN number
+(a string, since in real life ISBN numbers can begin with zero and can
+include hyphens) as the first argument and price as second argument, and
+should raise `ArgumentError` (one of Ruby's built-in exception types) if
+the ISBN number is the empty string or if the price is less than or
+equal to zero.  Include the proper getters and setters for these
+attributes.
+
+Include a method `price_as_string` that returns the price of
+the book formatted with a leading dollar sign and two decimal places, that is, a price
+of 20 should format as "$20.00" and a price of 33.8 should format as
+"$33.80".
+
