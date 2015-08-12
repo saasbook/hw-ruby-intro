@@ -4,14 +4,14 @@ describe 'Ruby intro part 1' do
       expect { sum([1,3,4]) }.not_to raise_error
     end
 
-    it "returns correct sum [20 points]" do
+    it "returns correct sum [20 points]" , points: 20 do
       expect(sum([1,2,3,4,5])).to be_a_kind_of Fixnum
       expect(sum([1,2,3,4,5])).to eq(15)
       expect(sum([1,2,3,4,-5])).to eq(5)
       expect(sum([1,2,3,4,-5,5,-100])).to eq(-90)
     end
 
-    it "works on the empty array [10 points]" do
+    it "works on the empty array [10 points]" , points: 10 do
       expect { sum([]) }.not_to raise_error
       expect(sum([])).to be_zero
     end    
@@ -21,17 +21,17 @@ describe 'Ruby intro part 1' do
     it "should be defined" do
       expect { max_2_sum([1,2,3]) }.not_to raise_error
     end
-    it "returns the correct sum [7 points]" do
+    it "returns the correct sum [7 points]" , points: 7 do
       expect(max_2_sum([1,2,3,4,5])).to be_a_kind_of Fixnum
       expect(max_2_sum([1,-2,-3,-4,-5])).to eq(-1)
     end
-    it 'works even if 2 largest values are the same [3 points]' do
+    it 'works even if 2 largest values are the same [3 points]' , points: 3 do
       expect(max_2_sum([1,2,3,3])).to eq(6)
     end
-    it "returns zero if array is empty [10 points]" do
+    it "returns zero if array is empty [10 points]" , points: 10 do
       expect(max_2_sum([])).to be_zero
     end
-    it "returns value of the element if just one element [10 points]" do
+    it "returns value of the element if just one element [10 points]" , points: 10 do
       expect(max_2_sum([3])).to eq(3)
     end
   end
@@ -40,7 +40,7 @@ describe 'Ruby intro part 1' do
     it "should be defined" do
       expect { sum_to_n?([1,2,3],4) }.not_to raise_error
     end
-    it "returns true when any two elements sum to the second argument [30 points]" do
+    it "returns true when any two elements sum to the second argument [30 points]" , points: 30 do
       expect(sum_to_n?([1,2,3,4,5], 5)).to be true
       expect(sum_to_n?([3,0,5], 5)).to be true
       expect(sum_to_n?([-1,-2,3,4,5,-8], 12)).to be false
@@ -55,11 +55,11 @@ describe 'Ruby intro part 1' do
     #   sum_to_n?([], 0).should be_false
     #   sum_to_n?([], 7).should be_false
     # end
-    it "returns false for the single element array [5 points]" do
+    it "returns false for the single element array [5 points]" , points: 5 do
       expect(sum_to_n?([1], 1)).to be false
       expect(sum_to_n?([3], 0)).to be false
     end
-    it "returns false for the empty array [5 points]" do
+    it "returns false for the empty array [5 points]" , points: 5 do
       expect(sum_to_n?([], 0)).to be false
       expect(sum_to_n?([], 7)).to be false
     end
