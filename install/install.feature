@@ -20,4 +20,4 @@ Feature: Installation of dependencies
     Given I go to the AutoGrader directory "rag"
     And it has an origin of "saasbook/rag"
     When I fetch the latest on origin branch "autograder_engine_refactor"
-    #Then I should see no difference
+    Then I should see no difference
