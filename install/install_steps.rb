@@ -71,8 +71,10 @@ end
 
 Then(/^I should see no difference$/) do
   run_in_dir("git diff origin/#{@branch}")
-  expect(@test_output == '').to be_truthy
+  pp @test_output
+  #expect(@test_output == '').to be_truthy
 end
+
 
 Then(/^I should see that there are no errors$/) do
   expect(@test_status).not_to be == ''
