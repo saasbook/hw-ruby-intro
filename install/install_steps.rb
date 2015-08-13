@@ -71,8 +71,7 @@ end
 
 Then(/^I should see no difference$/) do
   run_in_dir("git diff origin/#{@branch}")
-  pp @test_output
-  #expect(@test_output == '').to be_truthy
+  expect(@test_status).to be_success
 end
 
 
