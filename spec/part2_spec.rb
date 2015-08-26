@@ -1,3 +1,5 @@
+require 'ruby_intro.rb'
+
 describe "#hello" do
   it "should be defined" do
     expect { hello("Testing") }.not_to raise_error()#::NoMethodError)
