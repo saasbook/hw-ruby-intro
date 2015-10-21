@@ -5,23 +5,23 @@ This 3-part homework gives some basic practice in Ruby as well as
 getting you accustomed to making testing a regular part of your workflow.
 
 It follows a fairly standard Ruby convention for codebases: the code
-files are stored in `lib/` and the test files are stored in `spec/`.
-(We use the RSpec unit-testing framework; if we were using Ruby's default
-framework, known as `Test::Unit`, the test files would be under
-`test/`.)
-
-We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
-can submit this single file to the autograder.
-
-However, you can test each of the 3 parts separately.  The files
-`spec/part[123]_spec.rb` contain RSpec tests for each of the three
-parts.  For example, to test your answers to Part 1, say `rspec
-spec/part1_spec.rb`.  `rspec` with no arguments runs the tests in all
-the files `spec/*_spec.rb`.
-
-* The line numbers in the RSpec error report will
-give you guidance as to which tests failed.  (You can check the [RSpec
-documentation](http://rspec.info) to see how the `.rspec` file can be
+  files are stored in `lib/` and the test files are stored in `spec/`.
+  (We use the RSpec unit-testing framework; if we were using Ruby's default
+  framework, known as `Test::Unit`, the test files would be under
+  `test/`.)
+  
+  We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
+  can submit this single file to the autograder.
+  
+  However, you can test each of the 3 parts separately.  The files
+  `spec/part[123]_spec.rb` contain RSpec tests for each of the three
+  parts.  For example, to test your answers to Part 1, say `rspec
+  spec/part1_spec.rb`.  `rspec` with no arguments runs the tests in all
+  the files `spec/*_spec.rb`.
+  
+  * The line numbers in the RSpec error report will
+  give you guidance as to which tests failed.  (You can check the [RSpec
+  documentation](http://rspec.info) to see how the `.rspec` file can be
 used to customize the output format.)
 
 * If you want to be really cool, run `autotest`.  This will run all the
@@ -78,3 +78,4 @@ the book formatted with a leading dollar sign and two decimal places, that is, a
 of 20 should format as "$20.00" and a price of 33.8 should format as
 "$33.80".
 
+* Ha I edited your readme
