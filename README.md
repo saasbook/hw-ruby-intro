@@ -36,13 +36,13 @@ fail, fill in the code and save the code file, then watch the test pass!
 
 Check the [Ruby 2.x documentation](http://ruby-doc.org) on `Array`,
 `Hash` and `Enumerable` as they could help tremendously with these
-exercises. :-) 
+exercises. :-)
 
 0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.
 
-0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element. 
+0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element.
 
-0. Define a method `sum_to_n?(array, n)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. An empty array should sum to zero by definition.
+0. Define a method `sum_to_n?(array, n)` that takes an array of integers and an additional integer, n, as arguments and returns true if any two elements in the array of integers sum to n. This method should return false for any array with less than two elements.
 
 You can check your progress by running `rspec spec/part1_spec.rb`, or
 just running `autotest` and leaving it running.
@@ -63,7 +63,7 @@ Check the documentation on String and Regexp as they could help tremendously wit
 
 Define a class `BookInStock` which represents a book with an ISBN
 number, `isbn`, and price of the book as a floating-point number,
-`price`, as attributes.  
+`price`, as attributes.
 
 The constructor should accept the ISBN number
 (a string, since in real life ISBN numbers can begin with zero and can
