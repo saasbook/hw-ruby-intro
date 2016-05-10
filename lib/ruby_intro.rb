@@ -46,6 +46,6 @@ class BookInStock
   attr_accessor price
   
   def price_as_string
-    "$4{price}"
+    "$4{#price}"
   end
 end
