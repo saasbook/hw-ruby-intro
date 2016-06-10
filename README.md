@@ -4,7 +4,19 @@ Ruby Intro
 This 3-part homework gives some basic practice in Ruby as well as
 getting you accustomed to making testing a regular part of your workflow.
 
-It follows a fairly standard Ruby convention for codebases: the code
+Learning Goals
+--------------
+After completing this assignment, you will know how to:
+
+* Write simple code that uses basic constructs in the Ruby language, including methods and arguments, conditionals, string and array manipulation, regular expressions, and basic object-oriented programming mechanisms
+* Understand the Ruby project conventions for where code files and test files are located in a project's directory hierarchy
+* Run individual tests or suites of tests using the RSpec unit testing tool
+* Understand the basic syntax of RSpec unit tests
+ 
+Overview
+--------
+
+The repo for this assigment follows a fairly standard Ruby convention for codebases: the code
 files are stored in `lib/` and the test files are stored in `spec/`.
 (We use the RSpec unit-testing framework; if we were using Ruby's default
 framework, known as `Test::Unit`, the test files would be under
