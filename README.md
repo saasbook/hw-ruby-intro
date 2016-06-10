@@ -4,6 +4,24 @@ Ruby Intro
 This 3-part homework gives some basic practice in Ruby as well as
 getting you accustomed to making testing a regular part of your workflow.
 
+Learning Objectives
+-------------------
+
+  * Ruby language
+    - Understanding Ruby methods and arguments
+    - Array manipulation
+    - Conditionals
+    - String manipulation
+    - Regex
+    - Classes, instance variables, getters/setters
+    - Formatting 
+  * Testing
+    - running tests
+    - RSpec syntax
+
+Instructions
+-----------
+
 It follows a fairly standard Ruby convention for codebases: the code
 files are stored in `lib/` and the test files are stored in `spec/`.
 (We use the RSpec unit-testing framework; if we were using Ruby's default
