@@ -36,7 +36,17 @@ give you guidance as to which tests failed.  (You can check the [RSpec
 documentation](http://rspec.info) to see how the `.rspec` file can be
 used to customize the output format.)
 
+To ensure you have the rspec gem installed you need bundler and can then 
+run bundle install like so:
 
+```sh
+$ gem install bundler
+$ cd hw-ruby-intro
+$ bundle
+```
+
+When the above completes successfully you'll have RSpec installed and can
+run `rspec` from the command line to test your code.
 
 
 # 1. Arrays, Hashes, and Enumerables
