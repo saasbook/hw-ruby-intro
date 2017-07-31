@@ -11,7 +11,7 @@ Feature: Testing RUBY_INTRO homework
     And I should see the execution results with <test_title>
 
   Examples:
-    | test_title               | test_subject                  | spec                    | expected_result       |
+    | test_title               | test_subject                  | spec                             | expected_result       |
     | Part1: specs vs solution | solutions/lib/part1.rb        | hw-ruby-intro/spec/part1_spec.rb | Score out of 100: 100 |
     | Part1: specs vs skeleton | hw-ruby-intro/lib/part1.rb    | hw-ruby-intro/spec/part1_spec.rb | Score out of 100: 10  |
     | Part2: specs vs solution | solutions/lib/part2.rb        | hw-ruby-intro/spec/part2_spec.rb | Score out of 100: 100 |
