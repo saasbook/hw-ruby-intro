@@ -1,3 +1,5 @@
+Note that these are opinionated walkthroughs from Sam Joseph.  Opinions expressed are those of Sam Joseph alone and do not necessarily reflect the opinions of UCBerkeley or any of its employees.
+
 NOTE: can we get the green/red rspec highlighting in markdown somehow?
 
 Follow instructions in https://github.com/saasbook/hw-ruby-intro README
