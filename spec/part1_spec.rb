@@ -9,7 +9,7 @@ describe 'Ruby intro part 1' do
     end
 
     it 'returns correct sum [20 points]', points: 20 do
-      expect(sum([1, 2, 3, 4, 5])).to be_a_kind_of Fixnum
+      expect(sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer
       expect(sum([1, 2, 3, 4, 5])).to eq(15)
       expect(sum([1, 2, 3, 4, -5])).to eq(5)
       expect(sum([1, 2, 3, 4, -5, 5, -100])).to eq(-90)
@@ -26,7 +26,7 @@ describe 'Ruby intro part 1' do
       expect { max_2_sum([1, 2, 3]) }.not_to raise_error
     end
     it 'returns the correct sum [7 points]', points: 7 do
-      expect(max_2_sum([1, 2, 3, 4, 5])).to be_a_kind_of Fixnum
+      expect(max_2_sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer
       expect(max_2_sum([1, -2, -3, -4, -5])).to eq(-1)
     end
     it 'works even if 2 largest values are the same [3 points]', points: 3 do
