@@ -581,17 +581,17 @@ Failures:
   1) BookInStock constructor should reject invalid ISBN number [10 points]
      Failure/Error: expect { BookInStock.new('', 25.00) }.to raise_error(ArgumentError)
        expected ArgumentError but nothing was raised
-     # ./spec/part3_spec.rb:27:in `block (3 levels) in <top (required)>'
+     # ./spec/part3_spec.rb:27:in 'block (3 levels) in <top (required)>'
 
   2) BookInStock constructor should reject zero price [10 points]
      Failure/Error: expect { BookInStock.new('isbn1', 0) }.to raise_error(ArgumentError)
        expected ArgumentError but nothing was raised
-     # ./spec/part3_spec.rb:30:in `block (3 levels) in <top (required)>'
+     # ./spec/part3_spec.rb:30:in 'block (3 levels) in <top (required)>'
 
   3) BookInStock constructor should reject negative price [10 points]
      Failure/Error: expect { BookInStock.new('isbn1', -5.0) }.to raise_error(ArgumentError)
        expected ArgumentError but nothing was raised
-     # ./spec/part3_spec.rb:33:in `block (3 levels) in <top (required)>'
+     # ./spec/part3_spec.rb:33:in 'block (3 levels) in <top (required)>'
 
 Finished in 0.01331 seconds (files took 0.09387 seconds to load)
 3 examples, 3 failures
