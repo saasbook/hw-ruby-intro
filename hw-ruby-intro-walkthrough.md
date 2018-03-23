@@ -82,7 +82,7 @@ rspec ./spec/part1_spec.rb:17 # Ruby intro part 1 #sum works on the empty array 
 
 however the following should pass all the tests:
 
-```
+```rb
 def sum arr
   arr.inject 0, :+
 end
