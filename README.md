@@ -26,8 +26,8 @@ files are stored in `lib/` and the test files are stored in `spec/`.
 framework, known as `Test::Unit`, the test files would be under
 `test/`.)
 
-We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
-can submit this single file to the autograder.
+**We've placed "starter code" in `lib/ruby_intro.rb`; when you're all done, you
+can submit this single file to the autograder.**
 
 However, you can test each of the 3 parts separately.  The files
 `spec/part[123]_spec.rb` contain RSpec tests for each of the three
@@ -114,5 +114,7 @@ then watch the test pass!
 
 * Try pairing using the [one-undermanship pair programming style](http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
 
+# Submission Directions
 
+Upload a single `ruby_intro.rb` file to the autograder. 
 
