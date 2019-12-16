@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Note: see https://gradescope-autograders.readthedocs.io/en/latest/specs/ for the
+# runtime environment, directory structure, etc.
+# When this script runs, the following are true:
+#   WD = /autograder
+#  $WD/run_autograder    this file
+#  $WD/source/           extracted contents of autograder.zip
+#  $WD/submission/       this student's submission to be graded (could be single file, zipfile, etc)
+# The result of running this file should create:
+#  $WD/results/results.json
+
+# submission/ contains student's files;  source/spec/ contains rspec file(s)
+# rspec_gradescope_formatter tries to create results/results.json, so ensure results/ dir exists
+[ ! -d results ] && mkdir results
+
+# TODO: Decently handle misconfigured or missing required files
+
+# BUG Only do this if a Gemfile exists
+# bundle install --gemfile=submission/Gemfile
+# run rspec *once*, requiring all the specfiles and all the student solution files
+# bundle exec --gemfile=submission/Gemfile
+# TODO: run specs from submission if provided?
+rspec \
+    --require ./submission/*.rb \
+    --require ./source/rspec_gradescope_formatter.rb \
+    --format RSpecGradescopeFormatter \
+    source/autograder/*_spec.rb
