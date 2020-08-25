@@ -3,15 +3,15 @@
 
 # Part 1
 
-def sum arr
+def sum(arr)
   # YOUR CODE HERE
 end
 
-def max_2_sum arr
+def max_2_sum(arr)
   # YOUR CODE HERE
 end
 
-def sum_to_n? arr, n
+def sum_to_n?(arr, n)
   # YOUR CODE HERE
 end
 
@@ -21,11 +21,11 @@ def hello(name)
   # YOUR CODE HERE
 end
 
-def starts_with_consonant? s
+def starts_with_consonant?(s)
   # YOUR CODE HERE
 end
 
-def binary_multiple_of_4? s
+def binary_multiple_of_4?(s)
   # YOUR CODE HERE
 end
 
