@@ -1,0 +1,66 @@
+## See defaults at
+# https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+
+# Commonly used screens these days easily fit more than 80 characters.
+Metrics/LineLength:
+  Max: 120  #default is 80
+  # To make it possible to copy or click on URIs in the code, we allow lines
+  # containing a URI to be longer than Max.
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+  - http
+  - https
+  # The IgnoreCopDirectives option causes the LineLength rule to ignore cop
+  # directives like '# rubocop: enable ...' when calculating a line's length.
+  IgnoreCopDirectives: false
+  # The IgnoredPatterns option is a list of !ruby/regexp and/or string
+  # elements. Strings will be converted to Regexp objects. A line that matches
+  # any regular expression listed in this option will be ignored by LineLength.
+  IgnoredPatterns: []
+  # If you want the rule not to apply to a specific folder/file
+  Exclude:
+    - 'spec/*spec.rb'
+
+# Too short methods lead to extraction of single-use methods, which can make
+# the code easier to read (by naming things), but can also clutter the class
+Metrics/MethodLength:
+  CountComments: false  # count full line comments?
+  Max: 100 #default is 10s
+
+#  -- NOTE Early ruby developers do not have the skills necessary to keep the complexity small
+Metrics/BlockLength:
+  CountComments: false  # count full line comments?
+  Max: 250  # default is 25
+  ExcludedMethods:
+  # By default, exclude the `#refine` method, as it tends to have larger
+  # associated blocks.
+  - refine
+
+#  -- NOTE Early ruby developers do not have the skills necessary to keep the complexity small
+# The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
+Metrics/ClassLength:
+  Max: 1500 # Default is 100
+
+#  -- NOTE Early ruby developers do not have the skills necessary to keep the complexity small
+Metrics/AbcSize:
+  # The ABC size is a calculated magnitude, so this number can be an Integer or
+  # a Float.
+  Max: 30  # default is 15
+
+#  -- NOTE Early ruby developers do not have the skills necessary to keep the complexity small
+# Avoid complex methods.
+Metrics/CyclomaticComplexity:
+  Max: 24 #default is 6
+
+#  -- NOTE Early ruby developers do not have the skills necessary to keep the complexity small
+Metrics/PerceivedComplexity:
+  Max: 21 # default is 7
+
+#  -- NOTE Early ruby developers do not have the skills necessary to keep the complexity small
+Style/IfUnlessModifier:
+  Enabled: false
+
+# -- allow use of block comments
+Style/BlockComments:
+  Enabled: false
