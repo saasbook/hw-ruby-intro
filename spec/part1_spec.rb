@@ -4,7 +4,7 @@ require_relative '../lib/ruby_intro'
 
 describe 'Ruby intro part 1' do
   describe '#sum' do
-    it 'should be defined' do
+    it 'is defined' do
       expect { sum([1, 3, 4]) }.not_to raise_error
     end
 
@@ -22,7 +22,7 @@ describe 'Ruby intro part 1' do
   end
 
   describe '#max_2_sum' do
-    it 'should be defined' do
+    it 'is defined' do
       expect { max_2_sum([1, 2, 3]) }.not_to raise_error
     end
     it 'returns the correct sum [7 points]', points: 7 do
@@ -41,7 +41,7 @@ describe 'Ruby intro part 1' do
   end
 
   describe '#sum_to_n' do
-    it 'should be defined' do
+    it 'is defined' do
       expect { sum_to_n?([1, 2, 3], 4) }.not_to raise_error
     end
     it 'returns true when any two elements sum to the second argument [30 points]', points: 30 do

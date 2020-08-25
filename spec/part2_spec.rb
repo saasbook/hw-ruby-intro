@@ -3,7 +3,7 @@
 require_relative '../lib/ruby_intro'
 
 describe '#hello' do
-  it 'should be defined' do
+  it 'is defined' do
     expect { hello('Testing') }.not_to raise_error#::NoMethodError)
   end
 
@@ -16,7 +16,7 @@ describe '#hello' do
 end
 
 describe '#starts_with_consonant?' do
-  it 'should be defined' do
+  it 'is defined' do
     expect { starts_with_consonant?('d') }.not_to raise_error#::NoMethodError)
   end
   it 'classifies true cases [10 points]' , points: 10 do
@@ -40,7 +40,7 @@ describe '#starts_with_consonant?' do
 end
 
 describe '#binary_multiple_of_4?' do
-  it 'should be defined' do
+  it 'is defined' do
     expect { binary_multiple_of_4?('yes') }.not_to raise_error#::NoMethodError)
   end
   it 'classifies valid binary numbers [30 points]' , points: 30 do
