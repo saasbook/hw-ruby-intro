@@ -8,7 +8,7 @@ describe 'BookInStock' do
   end
 
   describe 'getters and setters' do
-    before(:each)  { @book = BookInStock.new('isbn1', 33.8) }
+    before(:each) { @book = BookInStock.new('isbn1', 33.8) }
     it 'sets ISBN [10 points]', points: 10 do
       expect(@book.isbn).to eq('isbn1')
     end

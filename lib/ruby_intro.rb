@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # When done, submit this entire file to the autograder.
 
 # Part 1

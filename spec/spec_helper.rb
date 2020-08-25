@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 #-- CUSTOMIZATION TO AVOID SHOULD
 #-- http://www.betterspecs.org/#should
 require 'should_not/rspec'
