@@ -59,6 +59,10 @@ Check the [Ruby 2.x documentation](http://ruby-doc.org) on `Array`,
 `Hash` and `Enumerable` as they could help tremendously with these
 exercises. :-) 
 
+Hints:
+-> From the drop down Tools menu, choose 'Terminal’. When the window opens, enter ruby -v at the prompt. This will give you the correct version of Ruby to look up. Navigate to the Ruby site above. Click on ‘more…’ located below the Core API heading. Then click on the closest version <= your version to access the correct documentation.
+-> For the following, navigate to the to ‘hw-ruby-intro’ directory first (recall that 'cd ' is the linux command for changing directory).
+
 0. Define a method `sum(array)` that takes an array of integers as an argument and returns the sum of its elements. For an empty array it should return zero.  Run associated tests via:  `$ rspec -e '#sum ' spec/part1_spec.rb`
 
 0. Define a method `max_2_sum(array)` which takes an array of integers as an argument and returns the sum of its two largest elements. For an empty array it should return zero. For an array with just one element, it should return that element. Run associated tests via:  `$ rspec -e '#max_2_sum' spec/part1_spec.rb`
@@ -68,6 +72,13 @@ exercises. :-)
 You can check your progress on the all the above by running `$ rspec spec/part1_spec.rb`.
 
 # 2. Strings and Regular Expressions
+
+Unfamiliar with Regular Expressions? Try one (or more) of these!
+[Rubular](https://rubular.com)
+[Rubylearning.com - Regular Expressions](http://rubylearning.com/satishtalim/ruby_regular_expressions.html)
+[RegexBuddy](https://www.regexbuddy.com/regex.html)
+[RexEgg](http://www.rexegg.com)
+[Regular Expressions!](https://ryanstutorials.net/regular-expressions-tutorial)
 
 Check the documentation on String and Regexp as they could help tremendously with these exercises. :-)
 
