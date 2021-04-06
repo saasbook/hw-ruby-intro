@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative '../lib/ruby_intro'
+
 describe '#hello' do
   it 'should be defined' do
     expect { hello('Testing') }.not_to raise_error#::NoMethodError)

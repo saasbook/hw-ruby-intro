@@ -1,0 +1,71 @@
+{
+  "root": {
+    "create": true,
+    "children": [
+      {
+        "assignment": {
+          "src": "solutions",
+          "children": [
+            {
+              "lib": {
+                "create": true,
+                "children": [
+                  {
+                    "ruby_intro.rb": {
+                      "src": "starter-code/ruby_intro.rb"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        ".guides": {
+          "src": "scaffolding/codio",
+          "except": ["scaffolding/codio/.settings"],
+          "children": [
+            {
+              "content": {
+                "src": "scaffolding/content"
+              }
+            },
+            {
+              "img": {
+                "src": "scaffolding/img"
+              }
+            },
+            {
+              "secure": {
+                "create": true,
+                "children": [
+                  {
+                    "grader.sh": {
+                      "src": "autograder/grader.sh"
+                    }
+                  },
+                  {
+                    "saas_grade.py": {
+                      "src": "autograder/saas_grade.py"
+                    }
+                  },
+                  {
+                    "autograder": {
+                      "src": "solutions/spec",
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        ".settings": {
+          "src": "scaffolding/codio/.settings"
+        }
+      }
+    ]
+  }
+}

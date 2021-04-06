@@ -1,0 +1,99 @@
+{
+ "sections": [
+  {
+   "id": "1eaf7474-1748-ba3a-51c0-6034bdf51877",
+   "title": "Part 1 Submission",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "assignment/hw-ruby-intro/lib/ruby_intro.rb",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Part-1-Submission-1eaf.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "6e2caee8-ef1c-fb5e-eaaf-3a917cc3f20a",
+   "title": "Part 2 Submission",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": " assignment/hw-ruby-intro/lib/ruby_intro.rb",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Part-2-Submission-6e2c.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": "",
+   "readOnly": false
+  },
+  {
+   "id": "a860bb78-d16e-4768-ad03-79b9c26dd8c8",
+   "title": "Part 3 Submission",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": " assignment/hw-ruby-intro/lib/ruby_intro.rb",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels-tree",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Part-3-Submission-a860.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": "",
+   "readOnly": false
+  },
+  {
+   "id": "ab799e81-a602-6967-80d9-6049be3ee085",
+   "title": "Going Further",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Going-Further-ab79.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": "",
+ "suppressPageNumbering": true,
+ "useSubmitButtons": true,
+ "useMarkAsComplete": true,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false,
+ "hideSectionsToggle": false,
+ "hideBackToDashboard": false,
+ "protectLayout": false
+}

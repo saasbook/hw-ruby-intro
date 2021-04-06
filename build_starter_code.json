@@ -1,0 +1,19 @@
+{
+  "root": {
+    "src": "solutions/",
+    "children": [
+      {
+        "lib": {
+          "create": true,
+          "children": [
+            {
+              "ruby_intro.rb": {
+                "src": "starter-code/ruby_intro.rb"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

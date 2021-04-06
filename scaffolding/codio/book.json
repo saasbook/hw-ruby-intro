@@ -1,0 +1,29 @@
+{
+ "name": "hw-ruby-intro",
+ "children": [
+  {
+   "id": "16fbf2b6-b355-1531-60ab-d1ff64cbcd0d",
+   "title": "Part 1 Submission",
+   "pageId": "1eaf7474-1748-ba3a-51c0-6034bdf51877",
+   "type": "page"
+  },
+  {
+   "id": "31eba402-3ce0-eff5-8d0d-1a98c44cd96c",
+   "title": "Part 2 Submission",
+   "pageId": "6e2caee8-ef1c-fb5e-eaaf-3a917cc3f20a",
+   "type": "page"
+  },
+  {
+   "id": "ed28cff3-87e9-e83f-d486-1fdc2d698092",
+   "title": "Part 3 Submission",
+   "pageId": "a860bb78-d16e-4768-ad03-79b9c26dd8c8",
+   "type": "page"
+  },
+  {
+   "id": "f0158808-d4f3-eb27-2452-bdf55d71ae9b",
+   "title": "Going Further",
+   "pageId": "ab799e81-a602-6967-80d9-6049be3ee085",
+   "type": "page"
+  }
+ ]
+}

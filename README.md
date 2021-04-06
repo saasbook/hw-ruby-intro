@@ -1,13 +1,8 @@
 Ruby Intro CI
 =============
 
-[![Build Status](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci.svg?token=CPXPCn5Dy1cwCKsavtqL)](https://magnum.travis-ci.com/saasbook/hw-ruby-intro-ci)
+The single-source-of-truth repository for the ruby introduction homework of the Berkeley ESaaS course.
 
-Please find instructions for the homework itself at: https://github.com/saasbook/hw-ruby-intro/blob/master/README.md
+The separate student-facing repository (located at https://github.com/saasbook/hw-ruby-intro) is automatically generated based off the contents of this repo. A 'codio ready' version of this assignment has also been generated in the `codio` branch. Both versions are generated on each commit to this -ci repo.
 
-This is a private repo which contains the Gradescope solution and autograder, both in ZIP and expanded format.
-
-This [template repo](https://github.com/saasbook/gradescope_rspec_assignment) has more references and examples for grading with Gradescope.
-
-![gradescope has been enabled](./gradescope-enabled.png)
-
+Note this private repository also contains the solution and autograder.
