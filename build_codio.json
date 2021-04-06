@@ -52,7 +52,7 @@
                   },
                   {
                     "autograder": {
-                      "src": "solutions/spec",
+                      "src": "solutions/spec"
                     }
                   }
                 ]
