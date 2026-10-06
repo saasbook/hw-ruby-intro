@@ -27,6 +27,25 @@ If this assignment ships with a `run_specs.sh` helper, you can run
 `bash run_specs.sh` from the assignment's root directory to get an interactive
 menu for running the test suite one part at a time.
 
+## GitHub SSH keys
+
+If you clone or push using an SSH URL such as
+`git@github.com:OWNER/REPOSITORY.git`, set up an SSH key in the environment
+where you run Git:
+
+1. Follow GitHub's instructions to
+   [generate an SSH key and add it to the SSH agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+2. [Add the public key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+   Keep the private key private.
+3. [Test your SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection):
+
+   ```sh
+   ssh -T git@github.com
+   ```
+
+HTTPS clone URLs do not use SSH keys. GitHub Codespaces already authenticates
+Git operations for the repository you opened.
+
 ## Local Development
 
 Work directly on your own machine. You are responsible for installing the
